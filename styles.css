@@ -1,11 +1,16 @@
+
+html, body, .flex-container {
+    height: 120%;width: 100%;
+}
 body {
+  
 background-color: #1f2937;
 font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .flex-container {
     display: flex;
     flex-direction:column;
-    min-height: 200vh;
+    flex-grow: 1;   
 }
 .flex-container >* {
     padding-left: 100px;
@@ -17,6 +22,7 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
     display: flex;
     flex-direction: row;
     padding-bottom: 50px;
+    flex-grow: 1;
 }
     .h-logo {
         display: flex;
@@ -43,49 +49,62 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
     flex-direction: row;
     
 }
-.container-2 >* {
-display: flex;
-flex-direction: column;
-word-wrap: normal;
 
-padding-top: 10px;
-padding-bottom: 10px;
-}
 .hero {
+
+    flex-direction: column;
     flex-grow: 1;
-    width: 50%;
-    
+    flex-basis: 50%;
+     
+   
 }
-.hero-main {
+
+    .hero-main {
+       
    font-size: 48px ;
    font-weight: 900 ;
-   color: #f9faf8; 
+   color: #f9faf8;
 
 }
-.hero-secondary{
-    font-size: 18px ;
+    .hero-secondary{
   
-    color: #e5e5e5;  
+  
+    font-size: 18px ;
+    color: #e5e5e5;
    }
-.toplink{
-    
-}
-.image {
+   
+    }
+    .button1{
+        color: #e5e7eb;
+        background-color: #3882f6;
+        border-color: #3882f6;
+        padding: 10px;
+        border-radius: 10px;
+        font-weight: bold;
+        font-size: 20px;
+        padding-inline: 10;
+    }
+    .image {
+     padding: 0px;
+     height: 80%;
     flex-grow: 1;
-    width: 50%;
+    flex-basis: 50%;
+
     background-color: #7d8697;
-}
+   
+    
+    }
 
 .container-3 {
     flex-grow: 1;
     background-color: white;
-}
+    }
 .container-4 {
     flex-grow: 1;
     background-color: #e5e7eb;
-}
+    }
 .container-5 {
     flex-grow: 1;
     background-color: white;
-    
-}
+
+    }
